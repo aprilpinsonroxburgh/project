@@ -1,0 +1,79 @@
+h1 {
+    background-color: #faf3df;
+    text-align: center;
+    text-shadow: 3cm;
+    border: 5px solid #798a65;
+    text-decoration: underline;
+    color:  #801336; 
+}
+
+body {
+  background-color: #faf3df; 
+  font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
+}
+
+.navbar {
+    background-color: #798a65;
+    width: 100%;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .navbar li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 20px;
+  }
+  
+  .navbar a {
+    color:  #801336; 
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    img:hover {
+
+     } 
+}
+.column-container {
+  display: flex; 
+}
+
+h2 {
+    text-align: center;
+    color:  #801336; 
+    text-align: center;
+}
+
+.box {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 32px;
+    background-color:#798a65; 
+    border: 5px solid #801336; 
+    padding: 20px;
+    text-align: center;
+}
+
+.box ul {
+  list-style: none;
+}
+      
+.box2 {
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 32px;
+  background-color: #faf3df;
+  border: 5px solid #801336; 
+  padding: 20px;
+  text-align: center;
+}
