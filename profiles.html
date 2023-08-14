@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Profiles</title>
+<link rel="stylesheet" href="profiles.css" media="screen">
+</head>
+
+<body>
+
+<div class="topnav">
+  <a href="#home">Home</a>
+  <a class="active" href="#profiles">Profiles</a>
+  <a href="#contact">Contact Us</a>
+  <a href="quiz.html">Quiz</a>
+</div>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<img src="leaps-ahead-logo-removebg-preview-removebg-preview.png" alt="Leaps Ahead Logo">
+<hr>
+
+<h2>Player Profiles</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('Netball')"> Netball</button>
+  <button class="btn" onclick="filterSelection('Football')"> Football</button>
+  <button class="btn" onclick="filterSelection('Cricket')"> Cricket</button>
+  <button class="btn" onclick="filterSelection('Rugby')"> Rugby</button>
+  <button class="btn" onclick="filterSelection('Athletics')"> Athletics</button>
+</div>
+
+<!-- Gallery Grid -->
+<div class="row">
+  <div class="column Netball">
+    <div class="content">
+        <div class="container">
+    <img src="helen-housby.jpg" alt="Avatar" class="image" style="width:100%" id="helen">
+    <div class="middle">
+        <img src="Flag_of_England.svg.png" alt="Flag of England" id="england">
+            </div>
+             </div>
+      <h2>Helen Housby</h2>
+      <p>
+        <b>Sport:</b> Netball <br>
+        <b>Nationality:</b> English
+    </div>
+  </div>
+
+  <div class="column Football">
+    <div class="content">
+        <div class="container">
+    <img src="Aitana_Bonmati.jpg" alt="Aitana Bonmati" class="image" style="width:100%" id="aitana">
+        <div class=middle>
+    <img src="Bandera_de_España.svg.png" alt="Flag of England" id="england">
+        </div>
+        </div>
+    <h2>Aitana Bonmati</h2>
+    <p>
+      <b>Sport:</b> Football <br>
+      <b>Nationality:</b> Spanish
+    </div>
+  </div>
+  
+  <div class="column Rugby">
+    <div class="content">
+        <div class="container">
+    <img src="stacey_fluhler (1).jpg" alt="Avatar" class="image" style="width:100%" id="stacey">
+    <div class="middle">
+        <img src="Flag_of_New_Zealand.svg.png" alt="Flag of New Zealand" id="newzealand">
+            </div>
+             </div>
+      <h2>Stacey Fluhler</h2>
+      <p>
+        <b>Sport:</b> Rugby <br>
+        <b>Nationality:</b> New Zealand
+      </p>
+
+    </div>
+  </div>
+  
+  <div class="column Cricket">
+    <div class="content">
+        <div class="container">
+    <img src="Smriti_Mandhana.jpg" alt="Avatar" class="image" style="width:100%" id="Smriti">
+    <div class="middle">
+        <img src="Flag_of_India.svg.webp" alt="Flag of India" id="india">
+            </div>
+             </div>
+      <h2>Smriti Mandhana</h2>
+      <p>
+        <b>Sport:</b> Cricket <br>
+        <b>Nationality:</b> India
+    </div>
+  </div>
+
+  <div class="column Athletics">
+    <div class="content">
+        <div class="container">
+    <img src="jessica_ennis.jpg" alt="Avatar" class="image" style="width:100%" id="jessica">
+    <div class="middle">
+        <img src="Flag_of_the_United_Kingdom_(1-2).svg.webp" alt="Flag of United Kingdom" id="uk">
+            </div>
+             </div>
+      <h2>Jessica Ennis</h2>
+      <p>
+        <b>Sport:</b> Athletics <br>
+        <b>Nationality:</b> Great Britain
+    </div>
+  </div>
+
+  <div class="column Netball">
+    <div class="content">
+        <div class="container">
+    <img src="steph_wood.jpg" alt="Avatar" class="image" style="width:100%" id="steph">
+    <div class="middle">
+        <img src="Flag_of_Australia_(converted).svg" alt="Flag of Australia" id="australia">
+            </div>
+             </div>
+      <h2>Steph Wood</h2>
+      <p>
+        <b>Sport:</b> Netball <br>
+        <b>Nationality:</b> Australia
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+</body>
+</html>

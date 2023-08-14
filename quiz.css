@@ -1,0 +1,300 @@
+html {
+    height: 100%;
+  }
+  body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: linear-gradient(109.6deg, rgb(253, 223, 168) 11.2%, rgb(246, 165, 254) 100.2%);;
+    filter: progid:DXImageTransform.Microsoft.gradient(
+        startColorstr="#91c1d1",
+        endColorstr="#91d1c1",
+        GradientType=0
+      );
+    text-align: center;
+    color: #142d4c; 
+ 
+  }
+  h1 {
+    margin-top: 100px;  
+    margin-bottom: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+      letter-spacing: 2px;
+      font-size: 3em;
+      color: royalblue;
+  }
+  #quiz {
+      font-family: 'Karla', "Comic Sans MS", "Comic Sans", sans-serif;
+      width: 800px;
+      margin: auto;
+
+  }
+
+  #questions {
+      font-size: 1.3em;
+      font-style: italic;
+      margin-bottom: 80px;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+  #answers {
+      list-style-type: none;
+      margin: 25px 10 10 10;
+      padding: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      text-align: center;
+      margin-left: 77.5px;
+  }
+  #answers li {
+      float: left;
+      /*margin:0 5px 0 0;*/
+      margin: 0px 15px 15px 0px;
+      width: 200px;
+      height: 50px;
+      position: relative;
+  }
+  #answers label, #answers input {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+  }
+  #answers input[type="radio"] {
+      opacity: 0.011;
+      z-index: 100;
+  }
+  #answers input[type="radio"]:checked + label {
+      opacity: 1;
+      background-color: #b767ff;
+  }
+  #answers label {
+      padding: 5px;
+      border: 2px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 90;
+      opacity: 0.7;
+      transition: opacity 0.2s linear;
+  }
+  #answers label:hover {
+      opacity: 1;
+  }
+  .button {
+      border: 2px solid brown;
+      margin: 0.5em;
+      padding: 0.5em;
+      display: inline-block;
+      background-color: transparent;
+      text-transform: uppercase;
+      padding: 10px;
+      color: brown;
+  }
+  .button:hover {
+      cursor: pointer;
+  }
+  #results {
+      display: none;
+  }
+  #error {
+      display: none;	
+      }
+      
+  /*WEBPAGE STYLES */	
+
+  /* Helen Housby */
+  .helen {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #00204a;
+  }
+  .helen h1 {
+      font-size: 2em;
+      font-family: "Comic Sans MS", "Comic Sans";
+  }
+      
+.helen #img1 {
+        content: url('helen-housby.jpg');
+    }
+
+  .helen a {
+      margin: 0 10px 0 20px;
+      color: black;
+  }
+  .helen a:hover {
+      background-color: white;
+  }
+
+  .helen a:before {
+      margin-right: 10px;
+  }
+  .helen div[id^='img'] {
+      border: solid purple;
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+
+
+  /* smriti */
+      
+  .smriti {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.4em;
+      text-align: center;
+      color: #00204a;
+  }
+  .smriti h1 {
+      font-size: 2em;
+      font-family: "Special Elite", "Comic Sans MS", "Comic Sans", sans-serif;
+  }
+  .smriti a {
+      color: darkgrey;
+      margin: 0 10px 0 20px;
+  }
+  .smriti a:hover {
+      background-color: maroon;
+  }
+  .smriti a:before {
+      margin-right: 10px;
+  }
+  .smriti div[id^='img'] {
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .smriti #img1 {
+      content: url('Smriti_Mandhana.jpg');
+  }
+
+      
+  /* Sha styles */
+
+  .Sha {
+      font-family: "Comic Sans MS", "Comic Sans";
+      font-size: 1.4em;
+      text-align: center;
+      color: #00204a;
+  }
+  .Sha h1 {
+      font-size: 2em;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .Sha a {
+      color: darkorange;
+      margin: 0 10px 0 20px;
+  }
+  .Sha a:hover {
+      background-color: green;
+      cursor: url(https://web.archive.org/web/20091027003810/http://ca.geocities.com/EverlastingIllusions/Miscellanous/Cursor9.gif), auto;
+  }
+  .Sha a:before {
+      content: url('https://web.archive.org/web/20090829195701/http://geocities.com/Athens/Parthenon/5567/dotdance.gif');
+      margin-right: 10px;
+  }
+  .Sha div[id^='img'] {
+      margin-right: 10px;
+      width: 100%;
+      display: inline-block;
+  }
+  .Sha #img1 {
+      content: url('Sha\'Carri\ Richardson.jpeg');
+  }
+      
+  /* Aitana Bonmati */
+      
+  .Aitana {
+      font-family: 'Press Start 2P', "Comic Sans MS", "Comic Sans";
+      font-size: 1.4em;
+      text-align: center;
+      color: #00204a;
+  }
+  .aitana h1 {
+      font-size: 2em;
+      font-family: 'Press Start 2P', "Comic Sans MS", "Comic Sans";
+  }
+
+  .aitana h1 {
+      font-size: 2em;
+  }
+
+  .aitana a {
+      color: gold;
+      margin: 0 10px 0 20px;
+  }
+  .aitana div[id^='img'] {
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .aitana #img1 {
+      content: url('Aitana_Bonmati.jpg');
+  }
+      
+  /* Stacey Fluhler */
+      
+  .stacey {
+      font-family: Jokerman, "Comic Sans MS", "Comic Sans";
+      font-size: 1.4em;
+      text-align: center;
+      color: #00204a;
+  }
+  .stacey h1 {
+      font-size: 2em;
+      font-family: Jokerman, "Comic Sans MS", "Comic Sans";
+  }
+
+  .stacey a {
+      color: black;
+      margin: 0 10px 0 20px;
+  }
+  .stacey a:hover {
+      background-color: pink
+  }
+  .stacey a:before {
+      margin-right: 10px;
+  }
+  .stacey div[id^='img'] {
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .stacey #img1 {
+      content: url('Stacey_Fluhler.jpg');
+      align-items: center;
+  }
+  
+  /* Jessica Ennis */
+      
+  .Jessica {
+      font-family: 'Bangers', "Comic Sans MS", "Comic Sans";
+      font-size: 1.4em;
+      text-align: center;
+      color: #00204a;
+  }
+  .Jessica h1 {
+      font-size: 2em;
+      font-family: 'Bangers', "Comic Sans MS", "Comic Sans";
+  }
+
+  .Jessica a {
+      color: lightslategrey;
+      margin: 0 10px 0 20px;
+  }
+  .Jessica a:hover {
+      background-color: darkslategray;
+
+  }
+  .cool div[id^='img'] {
+      margin-right: 10px;
+      width: 200px;
+      display: inline-block;
+  }
+  .cool #img1 {
+      content: url('jessica_ennis.jpg');
+  }
